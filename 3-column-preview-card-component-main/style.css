@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+p {
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.75;
+  /* margin-bottom: auto; */
+}
+
+main {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  width: 800px;
+}
+
+.orange-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e28525;
+  padding: 2rem;
+  flex-basis: 250px;
+}
+
+.orange-card a {
+  background-color: white;
+  border-radius: 30px;
+  color: #e28525;
+  padding: 10px 20px;
+  align-self: flex-start;
+}
+
+.green-card {
+  background-color: #016972;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+}
+
+.green-card a {
+  background-color: white;
+  border-radius: 30px;
+  color: #016972;
+  padding: 10px 20px;
+  align-self: flex-start;
+}
+.dark-green-card {
+  background-color: #00403f;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+}
+
+.dark-green-card a {
+  background-color: white;
+  border-radius: 30px;
+  color: #00403f;
+  padding: 10px 20px;
+  align-self: flex-start;
+}
+
+.orange-card img,
+.green-card img,
+.dark-green-card img {
+  width: 64px;
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 400px;
+  }
+}
+
+.card-container a:active {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}

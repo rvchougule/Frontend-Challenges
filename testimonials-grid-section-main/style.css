@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.testimonial-person img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #a07ad7;
+}
+
+.testimonial {
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 0 6px 4px #ccc;
+  margin: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.testimonial-1 {
+  background-color: #733fc8;
+  position: relative;
+}
+
+.testimonial-person {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  margin-inline: 10px;
+}
+
+.person-name {
+  margin-left: 20px;
+}
+
+.person-name h3 {
+  opacity: 0.6;
+  font-weight: 500;
+}
+.person-name h5 {
+  opacity: 0.4;
+  font-weight: 400;
+}
+
+.testimonial-head {
+  color: #f6eafd;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.testimonial-body {
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 10px;
+  text-align: left;
+}
+
+.bg-pattern {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  z-index: 0;
+}
+
+.testimonial-2 {
+  background-color: #49556b;
+}
+
+.testimonial-3,
+.testimonial-5 {
+  background-color: #ffffff;
+  color: black;
+}
+
+.testimonial-3 .testimonial-head,
+.testimonial-3 .testimonial-body,
+.testimonial-3 .testimonial-person,
+.testimonial-5 .testimonial-head,
+.testimonial-5 .testimonial-body,
+.testimonial-5 .testimonial-person {
+  color: rgb(35, 34, 34);
+}
+.testimonial-4 {
+  background-color: #18202dc8;
+}
+
+@media (min-width: 768px) {
+  .testimonial-container {
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-block: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: stretch;
+    justify-items: center;
+  }
+
+  .testimonial-1,
+  .testimonial-4 {
+    grid-column-start: span 2;
+  }
+
+  .testimonial-5 {
+    grid-column-start: 4;
+    grid-row-end: 1;
+    grid-row-start: span 2;
+  }
+
+  .testimonial-body {
+    font-size: 0.8rem;
+  }
+
+  .testimonial-head {
+    font-size: 1rem;
+  }
+}
